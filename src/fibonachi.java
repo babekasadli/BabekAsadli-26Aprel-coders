@@ -20,7 +20,6 @@ public class fibonachi {
                 break;
             }
         }
-
         System.out.println(result);
     }
 }

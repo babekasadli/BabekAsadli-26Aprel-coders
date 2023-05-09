@@ -7,7 +7,6 @@ public class Task6 {
         String input = scanner.nextLine();
         char[] characters = input.toCharArray();
         int[] symbolCount = new int[256];
-
         for (int i = 0; i < characters.length; i++) {
             char a = characters[i];
             symbolCount[Character.toUpperCase(a)]++;

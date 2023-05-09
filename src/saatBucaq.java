@@ -8,7 +8,6 @@ public class saatBucaq {
         if(result>180){
             result-=180;
         }
-
         System.out.println(result);
     }
 }
