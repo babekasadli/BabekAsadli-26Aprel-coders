@@ -30,6 +30,7 @@ public class task5 {
             }
             arr = newArray;
         }
+
         System.out.print("New array: ");
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
