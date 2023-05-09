@@ -6,7 +6,6 @@ public class arrayDiaqonal {
         System.out.print("Enter array size: ");
         int a = scanner.nextInt();
         int[][] arr = new int[a][a];
-
         for (int i = 0; i < a; i++) {
             for (int j = 0; j < a; j++) {
                 if (i + j >= a-1) {

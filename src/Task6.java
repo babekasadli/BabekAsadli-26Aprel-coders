@@ -12,7 +12,6 @@ public class Task6 {
             char a = characters[i];
             symbolCount[Character.toUpperCase(a)]++;
         }
-
         for (int i = 0; i < symbolCount.length; i++) {
             if (symbolCount[i] > 0) {
                 System.out.print((char) i + "-" + symbolCount[i] + " ");
