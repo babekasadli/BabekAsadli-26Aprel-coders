@@ -11,7 +11,6 @@ public class Main {
         System.out.println(a);
         System.out.println(b);
 
-
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the size of the array: ");
         int size = scanner.nextInt();

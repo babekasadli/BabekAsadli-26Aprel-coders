@@ -12,7 +12,6 @@ public class polindron {
                 break;
             }
         }
-
         System.out.println(result);
     }
 }

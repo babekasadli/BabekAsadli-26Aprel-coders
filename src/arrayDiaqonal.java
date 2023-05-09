@@ -13,6 +13,7 @@ public class arrayDiaqonal {
                 }
                 System.out.print(arr[i][j] + " ");
             }
+
             System.out.println();
         }
     }
