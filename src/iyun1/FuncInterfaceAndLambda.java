@@ -55,22 +55,27 @@ public class FuncInterfaceAndLambda {
     interface SumFunction {
         int calculateSum(int a, int b);
     }
+
     @FunctionalInterface //for Task 2
     interface FactorialFunction {
         long calculate(int n);
     }
+
     @FunctionalInterface //for Task 3
     interface StringLengthFunction {
         int getLength(String s);
     }
+
     @FunctionalInterface  //for Task 4
     interface StringTransformer {
         String transform(String input);
     }
+
     @FunctionalInterface //for Task 5
     interface EvenNumberChecker {
         boolean isEven(Integer num);
     }
+
     public static List<Integer> filterEvenNumbers(List<Integer> numbers, EvenNumberChecker checker) {
         List<Integer> evenNumbers = new ArrayList<>();
         for (Integer num : numbers) {
