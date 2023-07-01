@@ -1,0 +1,42 @@
+Create table sch1.workers(
+	id int primary key,
+	name varchar(255),
+	work varchar(255),
+	salary int
+);
+
+insert into sch1.workers
+values(1,'Sahib', 'Driver', 800);
+
+insert into sch1.workers
+values(2,'Muxtar', 'Scientist', 3400);
+
+insert into sch1.workers
+values(3,'Ehmed', 'Technician', 1300);
+
+insert into sch1.workers
+values(4,'Sebine', 'Nurse', 1100);
+
+insert into sch1.workers
+values(5,'Raul', 'Sailor', 800);
+
+insert into sch1.workers
+values(6,'Rehime', 'Designer', 900);
+
+select * from sch1.workers where salary>1000;
+
+
+update sch1.workers
+set salary=salary+salary/100*30
+where salary<1000;
+
+alter table sch1.workers
+add column logindate date;
+
+select * from sch1.workers where id=(select id from sch1.workers where work='Scientist');
+
+update sch1.workers
+set salary=salary-500
+where salary=(select salary from sch1.workers where salary>2000);
+
+select * from sch1.workers
